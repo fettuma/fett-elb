@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Downloads</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .exercise {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .exercise img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .exercise h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .download-btn {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(90deg, #ff758c, #ff7eb3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Activites4A</h1>
+        <div class="grid">
+            <div class="exercise">
+                <img src="../assets/images/activites4A.jpg" alt="Exercise 1">
+                <h3>Exercise 1</h3>
+                <a class="download-btn" href="./activites4A1.html" >Click to view</a>
+            </div>
+            <div class="exercise">
+                <img src="../assets/images/activites4B.jpg" alt="Exercise 2">
+                <h3>Exercise 2</h3>
+                <a class="download-btn" href="./activites4B2.html" >Click to view</a>
+            </div>
+            
+        </div>
+        <h5>by Fatima El baouaq</h5>
+    </div>
+</body>
+</html>

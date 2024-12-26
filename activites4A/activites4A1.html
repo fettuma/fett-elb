@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <th colspan="2" align="left"><span style="color:  black; background-color: yellow;">Client :</span></th>
+            </tr>
+            <tr>
+                <td>Civilité :</td>
+                <td>
+                    <input type="radio" name="civilite" value="mademoiselle"> Mademoiselle
+                    <input type="radio" name="civilite" value="madame"> Madame
+                    <input type="radio" name="civilite" value="monsieur" checked> Monsieur
+                </td>
+            </tr>
+            <tr>
+                <td>Nom / Prénom :</td>
+                <td><input type="text" name="nom_prenom" size="30"></td>
+            </tr>
+            <tr>
+                <td>Adresse :</td>
+                <td>
+                    <textarea name="adresse" rows="2" cols="30" placeholder="Rue No&#10;Boîte postale"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>No postal / Localité :</td>
+                <td>
+                    <input type="text" name="code_postal" size="10">
+                    <input type="text" name="localite" value="Lausanne" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Pays :</td>
+                <td>
+                    <select name="pays">
+                        <option value="maroc" selected>Maroc</option>
+                        <option value="france">France</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Plateforme(s) :</td>
+                <td>
+                    <input type="checkbox" name="platforme" value="windows" checked> Windows
+                    <input type="checkbox" name="platforme" value="macintosh"> Macintosh
+                    <input type="checkbox" name="platforme" value="unix"> Unix
+                </td>
+            </tr>
+            <tr>
+                <td>Application :</td>
+                <td>
+                    <select name="application" size="5" multiple>
+                        <option value="bureautique" selected>Bureautique</option>
+                        <option value="sgbd">SGBD</option>
+                        <option value="dao">DAO</option>
+                        <option value="internet" selected>Internet</option>
+                        <option value="statistiques">Statistiques</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Soumettre formulaire">
+                    <input type="reset" value="Effacer">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Exemple</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+        th {
+            background-color: red;
+            color: white;
+        }
+        .gray {
+            background-color: lightgray;
+        }
+        .footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="gray" rowspan="2">Nnnnnn</th>
+            <th colspan="2">Aaaaaaaaaaaa</th>
+        </tr>
+        <tr>
+            <th class="gray">Bbbbbbbb</th>
+            <th class="gray">Cccccccc</th>
+        </tr>
+        <tr>
+            <th class="gray">Un</th>
+            <td colspan="2">Blabla blabla blabla blabla blabla blabla<br>blabla blabla blabla blabla blabla blabla</td>
+        </tr>
+        <tr>
+            <th class="gray">Deux</th>
+            <td>Yyyyy</td>
+            <td>Blabla blabla blabla<br>blabla blabla blabla blabla<br>blabla blabla blabla blabla</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footer">Tableau 1 : abc def ghi jkl mno pqr stu vwx yz.</td>
+        </tr>
+    </table>
+</body>
+</html>

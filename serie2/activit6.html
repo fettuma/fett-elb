@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emploi du Temps</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #555;
+            color: white;
+        }
+        .jours {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        .matiere {
+            background-color: #d9ebf7;
+        }
+        .colspan {
+            background-color: #fff2cc;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2" class="jours">Jours</th>
+            <th colspan="4">Horaires</th>
+        </tr>
+        <tr>
+            <th>8h-10h</th>
+            <th>10h-12h</th>
+            <th>14h-16h</th>
+            <th>16h-18h</th>
+        </tr>
+        <tr>
+            <th class="jours">Lundi</th>
+            <td class="matiere">Arabe<br>Salle 2 - M. Yassine</td>
+            <td class="matiere">Maths<br>Salle 5 - M. Kassimi</td>
+            <td class="matiere">Physique<br>Atelier phy - M. Bouz</td>
+            <td class="matiere">Anglais<br>Salle 2 - Mme Hamd</td>
+        </tr>
+        <tr>
+            <th class="jours">Mardi</th>
+            <td class="matiere">Musique<br>Salle art - M. Adnane</td>
+            <td class="matiere">Informatique<br>Salle cyber - M. Atif</td>
+            <td colspan="2" class="colspan">Dessin<br>Salle art - M. Morjane</td>
+        </tr>
+        <tr>
+            <th class="jours">Mercredi</th>
+            <td colspan="2" class="colspan">Gestion<br>Salle 3 - Mlle Adil</td>
+            <td class="matiere">Sport<br>Cours 1 - M. Idrissi</td>
+            <td class="matiere">Physique<br>Atelier phy - M. Bouz</td>
+        </tr>
+        <tr>
+            <th class="jours">Jeudi</th>
+            <td class="matiere">Sciences<br>Salle phy - M. Aqami</td>
+            <td class="matiere">Français<br>Salle 2 - Mme Bourbia</td>
+            <td colspan="2" class="colspan">Anglais<br>Atelier phy - M. Bouz</td>
+        </tr>
+        <tr>
+            <th class="jours">Vendredi</th>
+            <td colspan="2" class="colspan">Technologie<br>Atelier phy - M. Bouz</td>
+            <td class="matiere">Anglais<br>Salle 2 - Mme Hamd</td>
+            <td class="matiere"></td>
+        </tr>
+        <tr>
+            <th class="jours">Samedi</th>
+            <td class="matiere">Maths<br>Salle 5 - M. Kassimi</td>
+            <td class="matiere">Français<br>Salle 2 - Mme Bourbia</td>
+            <td colspan="2" class="colspan"></td>
+        </tr>
+    </table>
+</body>
+</html>

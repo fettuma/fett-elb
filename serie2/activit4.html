@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio et Vidéo</title>
+</head>
+<body>
+    <h1>Implémentation de l'audio et de la vidéo</h1>
+
+    <!-- Audio Section -->
+    <section>
+        <h2>Audio</h2>
+        
+        <!-- Méthode 1: Avec un attribut src -->
+        <h3>Méthode 1: Avec attribut `src`</h3>
+        <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+            Votre navigateur ne prend pas en charge la balise audio.
+        </audio>
+        
+        <!-- Méthode 2: Avec une balise <source> -->
+        <h3>Méthode 2: Avec une balise `<source>`</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/ogg">
+            Votre navigateur ne prend pas en charge la balise audio.
+        </audio>
+        
+        <!-- Méthode 3: Avec un lien externe -->
+        <h3>Méthode 3: Avec un lien externe</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge la balise audio.
+        </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Vidéo</h2>
+
+        <!-- Méthode 1: Avec un attribut src -->
+        <h3>Méthode 1: Avec attribut `src`</h3>
+        <video controls width="640" height="360" src="https://www.w3schools.com/html/mov_bbb.mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+
+        <!-- Méthode 2: Avec une balise <source> -->
+        <h3>Méthode 2: Avec une balise `<source>`</h3>
+        <video controls width="640" height="360">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/ogg">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+
+        <!-- Méthode 3: Avec un lien externe -->
+        <h3>Méthode 3: Avec un lien externe</h3>
+        <video controls width="640" height="360">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+    </section>
+</body>
+</html>
